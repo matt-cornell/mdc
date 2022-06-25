@@ -1,5 +1,8 @@
 #ifndef RAW_TERM_HPP
 #define RAW_TERM_HPP
+#if defined(_WIN32) || defined(WIN32)
+#error "You're on your own, good luck!"
+#endif
 #include <cstdlib>
 #include <termios.h>
 #include <unistd.h>
